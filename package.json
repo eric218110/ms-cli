@@ -7,7 +7,9 @@
     "ms": "./bin/main/index.js"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://github.com/eric218110/ms-cli",
+    "tag": "ms"
   },
   "repository": {
     "type": "repository",
