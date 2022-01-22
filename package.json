@@ -28,15 +28,11 @@
     "prestart:dev": "npm run build"
   },
   "dependencies": {
-    "bluebird": "^3.7.2",
     "commander": "2.19.0",
-    "execa": "^6.0.0",
-    "figlet": "1.2.1",
     "inquirer": "6.2.2",
     "node-emoji": "^1.11.0",
     "ora": "5.4.1",
-    "pkg-install": "^1.0.0",
-    "shelljs": "^0.8.5"
+    "pkg-install": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
