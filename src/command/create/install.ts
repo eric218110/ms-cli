@@ -44,6 +44,13 @@ export const installPackages = async ({ name } = { name: '' }) => {
 
 const success = ({ name = '' }) => {
   console.log()
-  console.log(get('tada'), ` Micro services ${name} criado com sucesso`)
-  console.log(get('cof'), ` Acesse ${name} e vamos codar `, get('heart'))
+  console.log(
+    get('tada'),
+    ` Micro services \x1b[34m${name}\x1b[0m criado com sucesso`
+  )
+  console.log(
+    get('coffee'),
+    ` Acesse \x1b[34m${name}\x1b[0m e vamos codar`,
+    get('heart')
+  )
 }

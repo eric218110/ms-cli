@@ -6,17 +6,17 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "rootDir": ".",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "strict": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "paths": {
       "@command/*": [
-        "./command/*"
+        "./src/command/*"
       ],
       "@utils/*": [
-        "./utils/*"
+        "./src/utils/*"
       ]
     }
   },
