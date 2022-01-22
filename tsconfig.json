@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "bin",
+    "module": "commonjs",
+    "target": "es2019",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "rootDir": ".",
+    "baseUrl": "src",
+    "strict": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@command/*": [
+        "./command/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
