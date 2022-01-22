@@ -10,7 +10,8 @@ export const cloneMS = async ({ name } = { name: '' }) => {
     const isExecutedComand = executeComand(
       `git clone ${BASE_URL_REPO_TEMPLATE_MS} ${name}`
     )
-    if (isExecutedComand) {
+    const initGit = executeComand(`cdd ${name} && git remote rm origin`)
+    if (isExecutedComand && initGit) {
       spinner.succeed('Clone realizado com sucessso')
       return true
     } else {
