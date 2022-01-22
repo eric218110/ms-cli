@@ -9,6 +9,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "repository",
+    "url": "https://github.com/eric218110/ms-cli"
+  },
+  "author": {
+    "name": "Eric Silva",
+    "email": "ericsilvaccp@gmail.com",
+    "url": "https://github.com/eric218110"
+  },
   "scripts": {
     "prebuild": "rimraf bin",
     "build": "babel src --extensions \".js,.ts\" --out-dir bin --copy-files --no-copy-ignored",
