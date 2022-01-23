@@ -1,5 +1,5 @@
 {
-  "name": "ms-cli",
+  "name": "@ms/cli",
   "version": "1.0.0",
   "main": "./bin/main/index.js",
   "license": "MIT",
@@ -8,11 +8,11 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://github.com/eric218110/ms-cli",
+    "registry": "https://registry.npmjs.org/",
     "tag": "ms"
   },
   "repository": {
-    "type": "repository",
+    "type": "git",
     "url": "https://github.com/eric218110/ms-cli"
   },
   "author": {
@@ -23,14 +23,12 @@
   "scripts": {
     "prebuild": "rimraf bin",
     "build": "babel src --extensions \".js,.ts\" --out-dir bin --copy-files --no-copy-ignored",
-    "publish:next": "npm publish --access public --tag next",
-    "publish:npm": "npm publish --access public",
     "prepublish:npm": "npm run build",
-    "prestart:dev": "npm run build"
+    "publish:npm": "npm publish --access public --registry=https://registry.npmjs.org/"
   },
   "dependencies": {
     "commander": "2.19.0",
-    "inquirer": "6.2.2",
+    "inquirer": "^8.2.0",
     "node-emoji": "^1.11.0",
     "ora": "5.4.1",
     "pkg-install": "^1.0.0"
