@@ -24,7 +24,7 @@
     "prebuild": "rimraf bin",
     "build": "babel src --extensions \".js,.ts\" --out-dir bin --copy-files --no-copy-ignored",
     "prepublish:npm": "npm run build",
-    "publish:npm": "npm publish --access public --registry=https://registry.npmjs.org/"
+    "publish:npm": "npm publish --access=public"
   },
   "dependencies": {
     "commander": "2.19.0",
